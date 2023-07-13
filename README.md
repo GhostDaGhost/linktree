@@ -1,4 +1,4 @@
-# vue-ts
+# linktree
 
 ## Project setup
 ```

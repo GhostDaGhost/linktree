@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class='main_container'>
+        <div class='columns'>
+            <Favicon/>
+            <NameHeader/>
+            <Links/>
+        </div>
+    </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+    import { Options, Vue } from 'vue-class-component';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    import Favicon from './components/Favicon/Favicon.vue';
+    import Links from './components/Links/Links.vue';
+    import NameHeader from './components/NameHeader/NameHeader.vue';
+
+    @Options({components: {
+        Favicon,
+        NameHeader,
+        Links
+    }})
+
+    export default class App extends Vue {}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+    * {
+        user-select: none;
+    }
+
+    body {
+        min-height: 100vh;
+
+        background-repeat: no-repeat;
+        // background: radial-gradient(circle, rgb(58, 159, 206) 20%, rgb(57, 54, 233) 100%);
+        background-image: url('./assets/background.jpg');
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main_container {
+        display: flex;
+        justify-content: center;
+
+        > .columns {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
 </style>
