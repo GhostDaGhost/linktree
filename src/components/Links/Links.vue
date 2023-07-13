@@ -12,7 +12,7 @@
             Threads
         </a>
 
-        <a class="link" href="https://instagram.com/alex.arizola" rel="noopener noreferrer" target="_blank">
+        <a class="link" href="https://alexarizola.dev/" rel="noopener noreferrer" target="_blank">
             Portfolio
         </a>
 
