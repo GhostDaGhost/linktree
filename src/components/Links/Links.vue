@@ -41,6 +41,10 @@
         flex-direction: column;
 
         > .link {
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             &:hover {
                 color: rgb(0, 38, 255);
                 background: rgba(255, 255, 255);

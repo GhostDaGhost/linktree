@@ -4,6 +4,12 @@
             <Favicon/>
             <NameHeader/>
             <Links/>
+
+            <div class='madewith_container'>
+                <h4 class='madewith'>
+                    Created with <a class="hyperlink" href="https://vuejs.org/">Vue.js</a>
+                </h4>
+            </div>
         </div>
     </div>
 </template>
@@ -41,6 +47,15 @@
         display: none;
     }
 
+    .hyperlink {
+        &:hover {
+            color: rgb(61, 253, 253);
+        }
+
+        color: rgb(24, 180, 180);
+        transition: .1s ease-in-out;
+    }
+
     .main_container {
         display: flex;
         justify-content: center;
@@ -49,6 +64,17 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+
+            > .madewith_container {
+                margin-top: 1vmin;
+                text-align: center;
+
+                > .madewith {
+                    font-size: 1.85vh;
+                    font-family: Arial, sans-serif;
+                    color: white;
+                }
+            }
         }
     }
 </style>
