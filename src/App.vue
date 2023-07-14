@@ -7,7 +7,7 @@
 
             <div class='madewith_container'>
                 <h4 class='madewith'>
-                    Created with <a class="hyperlink" href="https://vuejs.org/">Vue.js</a>
+                    Created with <a class="hyperlink" href="https://vuejs.org/" rel="noopener noreferrer" target="_blank">Vue.js</a>
                 </h4>
             </div>
         </div>
