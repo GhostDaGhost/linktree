@@ -36,7 +36,7 @@
     }
 
     body {
-        min-height: 100vh;
+        //min-height: 100vh;
 
         background-repeat: no-repeat;
         // background: radial-gradient(circle, rgb(58, 159, 206) 20%, rgb(57, 54, 233) 100%);
